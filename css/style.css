@@ -12,7 +12,161 @@
 }
 
 body {
+    margin: 0 auto;
+    width: 430px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: var(--background);
+    border-bottom: 1px solid rgb(0 0 0 / 30%);
+    width: 430px;
+    height: 88px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 430px;
+    padding: 16px 40px;
+}
+
+.logo {
+    width: 164px;
+    height: 56px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../assets/images/home-hero-banner.jpg");
+    width: 430px;
+    height: 448px;
+}
+
+.main-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--background);
+    border-radius: 16px;
+    width: 350px;
+    height: 240px;
+}
+
+.main-div h1 {
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--primory);
+    text-align: center;
+    padding: 24px 0 16px 0;
     margin: 0;
+}
+
+.main-div p {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--primory);
+    text-align: center;
+    padding: 0 0 16px 0;
+    margin: 0;
+}
+
+.view-tours-btn {
+    color: var(--background);
+    background-color: var(--primory);
+    border-radius: 50px;
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    width: 200px;
+    height: 40px;
+}
+
+footer {
+    background-color: var(--background);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+}
+
+footer div {
+    background-color: var(--info);
+    border-radius: 16px;
+    width: 350px;
+    height: 270px;
+    padding: 24px;
+}
+
+.footer-sections {
+    margin-bottom: 24px;
+}
+
+.footer-headers {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--primory);
+    margin: 0;
+    padding-bottom: 32px;
+}
+
+footer p {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--primory);
+    margin: 0;
+    padding-bottom: 1rem;
+}
+
+.footer-icons {
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+}
+
+.footer-orgnr-blog {
+    font-weight: 600;
+    padding-right: 8px;
+}
+
+.padding-orgnr {
+    padding-top: 1rem;
+}
+
+.padding-blog {
+    padding-top: 56px;
+}
+
+footer ul {
+    padding: 0 0 0 24px;
+    margin: 0;
+}
+
+footer li {
+    padding-bottom: 16px;
+}
+
+.certificates-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.certificate-rk {
+    width: 180px;
+    height: 40px;
+}
+
+.certificates {
+    width: 40px;
+    height: 40px;
+    margin-top: 20px;
 }
 
 /* Small (sm) */
