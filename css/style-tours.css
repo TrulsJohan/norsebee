@@ -40,42 +40,97 @@ nav {
 
 main {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url("../assets/images/home-hero-banner.jpg");
-    width: 430px;
-    height: 448px;
+    background-color: var(--background);
+    padding: 24px 0;
 }
 
-.main-div {
+.breadcrumb-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 350px;
+    height: 40px;
+}
+
+.breadcrumb {
+    width: 200px;
+    height: 40px;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#summer-btn {
+    background-color: var(--primory);
+    color: var(--background);
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    border: none;
+}
+
+#winter-btn {
+    background-color: var(--info);
+    color: var(--primory);
+    border: 1px solid rgb(0 0 0 / 30%);
+}
+
+.tour-div {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--background);
-    border-radius: 16px;
+    background-color: var(--info);
+    border-radius: 1rem;
     width: 350px;
-    height: 240px;
+    height: 509px;
+    padding: 1rem;
+    margin-top: 24px;
 }
 
-.main-div h1 {
-    font-size: 32px;
+.tour-img {
+    width: 318px;
+    height: 224px;
+    border-radius: 16px;
+}
+
+main h2 {
+    font-size: 20px;
     font-weight: 600;
     color: var(--primory);
-    text-align: center;
-    padding: 24px 0 16px 0;
+    padding-top: 16px;
     margin: 0;
 }
 
-.main-div p {
+.tour-text {
     font-size: 16px;
     font-weight: 400;
-    color: var(--primory);
     text-align: center;
-    padding: 0 0 16px 0;
+    color: var(--primory);
+    padding-top: 8px;
     margin: 0;
 }
 
-.view-tours-btn {
+.rating {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--primory);
+    padding-top: 16px;
+    margin: 0;
+}
+
+.rating-stars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.more-info-btn {
     color: var(--background);
     background-color: var(--primory);
     border-radius: 50px;
@@ -84,6 +139,7 @@ main {
     font-weight: 600;
     width: 200px;
     height: 40px;
+    margin-top: 16px;
 }
 
 footer {

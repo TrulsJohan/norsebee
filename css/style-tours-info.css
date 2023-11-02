@@ -1,0 +1,400 @@
+:root {
+    --primory: #262F40;
+    --secondary: #FF0000;
+    --background: #F7F7F7;
+    --info: #DBDBDB;
+    --link: #0000FF;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0 auto;
+    width: 430px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: var(--background);
+    border-bottom: 1px solid rgb(0 0 0 / 30%);
+    width: 430px;
+    height: 88px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 430px;
+    padding: 16px 40px;
+}
+
+.logo {
+    width: 164px;
+    height: 56px;
+}
+
+main {
+    background-color: var(--background);
+    padding: 0 0 24px 0;
+}
+
+.img-container {
+    position: relative;
+    width: 430px;
+    height: 198px;
+}
+
+.mountain-img {
+    width: 430px;
+    height: 198px;
+}
+
+.mountain-guideline {
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    left: 265px;
+}
+
+.guideline-btn {
+    font-size: 8px;
+    font-weight: 600;
+    background-color: var(--info);
+    color: var(--primory);
+    border: 1px solid rgb(0 0 0 / 30%);
+    border-radius: 50px;
+    width: 40px;
+    height: 16px;
+}
+
+#top-btn {
+    position: absolute;
+    z-index: 10;
+    top: 61px;
+    left: 301px;
+}
+
+#break-btn {
+    position: absolute;
+    z-index: 10;
+    top: 141px;
+    left: 228px;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.section-headers {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--primory);
+    margin: 0;
+}
+
+#kilpittsjare {
+    padding-bottom: 8px;
+}
+
+.info-highlight {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--primory);
+    padding-left: 1rem;
+}
+
+.info-container p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--primory);
+    margin: 0;
+    padding-top: 8px;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+}
+
+.rating-stars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1rem;
+}
+
+.book-btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-underline {
+    height: 1px;
+    width: 116px;
+    background-color: rgb(0 0 0 / 30%);
+}
+
+.book-btn {
+    background-color: var(--primory);
+    color: var(--background);
+    border-radius: 50px;
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    width: 118px;
+    height: 40px;
+}
+
+.tour-info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.tour-info-text {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--primory);
+    text-align: center;
+    margin: 0;
+    padding-top: 1rem;
+}
+
+.break-line-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.break-line {
+    background-color: rgb(0 0 0 / 30%);
+    height: 1px;
+    width: 350px;
+}
+
+.reviews-container {
+    padding: 1rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.review-box {
+    background-color: var(--info);
+    border-radius: 1rem;
+    width: 350px;
+    height: 274px;
+    padding: 24px;
+    margin-top: 1rem;
+}
+
+.review-person {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--primory);
+    text-decoration: underline;
+    margin: 0;
+}
+
+.review-text {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--primory);
+    margin: 0;
+    padding-top: 1rem;
+}
+
+#review-rating {
+    padding-top: 0;
+    margin: 0;
+}
+
+#review-difficulty {
+    padding-top: 0;
+    margin: 0;
+}
+
+#review-rating-two {
+    padding-top: 0;
+    margin: 0;
+}
+
+#review-difficulty-two {
+    padding-top: 0;
+    margin: 0;
+}
+
+.view-more-btn {
+    background-color: var(--info);
+    color: var(--primory);
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: underline;
+    border: none;
+    padding: 0;
+    margin: 24px 100px 0 100px;
+    width: 102px;
+    height: 24px;
+}
+
+.more-reviews-container {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0 1rem 0;
+}
+
+.more-reviews-btn {
+    background-color: var(--background);
+    color: var(--primory);
+    font-size: 20px;
+    font-weight: 400;
+    border: none;
+}
+
+.location-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0 0 0;
+}
+
+.google-maps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--primory);
+    margin: 0;
+    padding-top: 8px;
+}
+
+#google-maps-link {
+    color: var(--link);
+    text-decoration: underline;
+}
+
+.google-maps-img {
+    border-radius: 1rem;
+    width: 350px;
+    height: 168px;
+    margin: 1rem 0 0 0;
+}
+
+footer {
+    background-color: var(--background);
+    border-top: 1px solid rgb(0 0 0 / 30%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+}
+
+footer div {
+    background-color: var(--info);
+    border-radius: 16px;
+    width: 350px;
+    height: 270px;
+    padding: 24px;
+}
+
+.footer-sections {
+    margin-bottom: 24px;
+}
+
+.footer-headers {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--primory);
+    margin: 0;
+    padding-bottom: 32px;
+}
+
+footer p {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--primory);
+    margin: 0;
+    padding-bottom: 1rem;
+}
+
+.footer-icons {
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+}
+
+.footer-orgnr-blog {
+    font-weight: 600;
+    padding-right: 8px;
+}
+
+.padding-orgnr {
+    padding-top: 1rem;
+}
+
+.padding-blog {
+    padding-top: 56px;
+}
+
+footer ul {
+    padding: 0 0 0 24px;
+    margin: 0;
+}
+
+footer li {
+    padding-bottom: 16px;
+}
+
+.certificates-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.certificate-rk {
+    width: 180px;
+    height: 40px;
+}
+
+.certificates {
+    width: 40px;
+    height: 40px;
+    margin-top: 20px;
+}
+
+/* Small (sm) */
+@media (min-width: 640px) {
+}
+
+/* Medium (md) tablet */
+@media (min-width: 768px) {
+}
+
+/* Large (lg) */
+@media (min-width: 1024px) {
+}
+
+/* xLarge (xl) desktop */
+@media (min-width: 1280px) {
+}
+
+/* xxLarge (xxl) */
+@media (min-width: 1536px) {
+}
