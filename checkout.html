@@ -44,32 +44,31 @@
         </div>
 
         <div class="personal-container">
-            <h2>Personal info</h2>
-            <form class="personal-form">
+            <h2>Payment</h2>
+            <form class="payment-form">
                 <div class="label-div">
-                    <label for="first-name" class="label">First name:</label>
-                    <input type="text" id="first-name" class="name-input" name="first-name" placeholder="|...">
+                    <label for="name" class="label">Cardholders name:</label>
+                    <input type="text" id="name" class="name-card-input" name="name" placeholder="|...">
                 </div>
                 <div class="label-div">
-                    <label for="last-name" class="label">Last name:</label>
-                    <input type="text" id="last-name" class="name-input" name="last-name" placeholder="|...">
+                    <label for="card" class="label">Card:</label>
+                    <input type="number" id="card" class="name-card-input" name="card" placeholder="***0000">
                 </div>
                 <div class="info-input-container">
                     <div class="label-div">
-                        <label for="participants" class="label">Participants:</label>
-                        <input type="number" id="participants" class="info-input" name="participants" placeholder="1">
+                        <label for="expire-date" class="label">Expire date:</label>
+                        <input type="date" id="expire-date" class="expire-cv-input" name="expire-date" placeholder="mm/dd/yyyy">
                     </div>
                     <div class="label-div">
-                        <label for="date" class="label">Date:</label>
-                        <input type="date" id="date" class="info-input" name="date" placeholder="mm/dd/yyyy">
+                        <label for="security-code" class="label">Security code:</label>
+                        <input type="number" id="security-code" class="expire-cv-input" name="security-code" placeholder="***">
                     </div>
                 </div>
                 <div class="checkbox-container">
                     <label for="checkbox"></label>
                     <input type="checkbox" id="checkbox" class="checkbox-input" name="checkbox">
                     <p>
-                        I have read and agree to the responsibility<br>
-                        and bookingtearms.
+                        Save card information for future bookings?
                     </p>
                 </div>
             </form>
@@ -79,15 +78,39 @@
             <div class="break-line"></div>
         </div>
 
+        <div class="summary-container">
+            <h2>Summary</h2>
+            <p class="summary-text">
+                Booking: Kilpittsjare<br>
+                Full Name: Truls Johan Jacobsen-Lamoy<br>
+                Participants: 1<br>
+                Date: 24. 12. 2023<br>
+                Card: ***9886<br>
+            </p>
+            <div class="total-sum-container">
+                <p class="total-sum">
+                    Total sum:
+                </p>
+                <p class="total-sum">
+                    1299 kr
+                </p>
+            </div>
+
+        </div>
+
+        <div class="break-line-container">
+            <div class="break-line"></div>
+        </div>
+
         <div class="btn-container">
             <a>
-                <button class="back-btn">
-                    Back
+                <button class="previous-btn">
+                    Previous
                 </button>
             </a>
             <a>
-                <button class="next-btn">
-                    Next
+                <button class="confirm-btn">
+                    Confirm order
                 </button>
             </a>
         </div>

@@ -76,22 +76,22 @@ main {
 }
 
 #book-btn {
-    background-color: var(--primory);
-    color: var(--background);
-    position: absolute;
-    z-index: 20;
-    bottom: 20px;
-    border: none;
-}
-
-#payment-btn {
     background-color: var(--info);
     color: var(--primory);
     border: 1px solid rgb(0 0 0 / 30%);
     position: absolute;
+    z-index: 10;
+    bottom: 20px;
+}
+
+#payment-btn {
+    background-color: var(--primory);
+    color: var(--background);
+    border: none;
+    position: absolute;
     bottom: 20px;
     left: 190px;
-    z-index: 10;
+    z-index: 20;
 }
 
 .break-line-container {
@@ -122,7 +122,7 @@ main {
     padding-bottom: 8px;
 }
 
-.personal-form {
+.payment-form {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -150,7 +150,7 @@ main {
     width: 350px;
 }
 
-.name-input {
+.name-card-input {
     width: 350px;
     height: 40px;
     border: 1px solid rgb(0 0 0 / 30%);
@@ -159,7 +159,7 @@ main {
     border-radius: 1rem;
 }
 
-.info-input {
+.expire-cv-input {
     width: 165px;
     height: 40px;
     border: 1px solid rgb(0 0 0 / 30%);
@@ -187,10 +187,10 @@ main {
 .checkbox-input {
     width: 24px;
     height: 24px;
-    margin-right: 1rem;
+    margin: 24px 1rem 0 0;
 }
 
-.back-btn {
+.previous-btn {
     width: 165px;
     height: 40px;
     font-size: 20px;
@@ -209,7 +209,7 @@ main {
     padding: 24px 0;
 }
 
-.next-btn {
+.confirm-btn {
     width: 165px;
     height: 40px;
     font-size: 20px;
@@ -218,6 +218,47 @@ main {
     background-color: var(--primory);
     border: none;
     border-radius: 50px;
+}
+
+.summary-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 350px;
+    padding-top: 24px;
+}
+
+.summary-container h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--primory);
+    margin: 0;
+}
+
+.summary-text {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--primory);
+    margin: 0;
+    padding-top: 1rem;
+    width: 350px;
+}
+
+.total-sum-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 350px;
+    margin: 0;
+}
+
+.total-sum {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--primory);
+    margin: 0;
+    padding-top: 24px;
 }
 
 footer {
