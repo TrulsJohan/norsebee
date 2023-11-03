@@ -12,8 +12,7 @@
 }
 
 body {
-    margin: 0 auto;
-    width: 430px;
+    margin: 0;
 }
 
 header {
@@ -36,6 +35,10 @@ nav {
 .logo {
     width: 164px;
     height: 56px;
+}
+
+.nav-menu-tab {
+    display: none;
 }
 
 main {
@@ -93,19 +96,26 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 430px;
     padding: 24px;
 }
 
-footer div {
+.tb-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    height: 564px;
+    background-color: var(--background);
+}
+
+.footer-sections {
+    margin-bottom: 24px;
     background-color: var(--info);
     border-radius: 16px;
     width: 350px;
     height: 270px;
     padding: 24px;
-}
-
-.footer-sections {
-    margin-bottom: 24px;
 }
 
 .footer-headers {
@@ -133,8 +143,14 @@ footer p {
 }
 
 .footer-orgnr-blog {
+    font-size: 14px;
     font-weight: 600;
     padding-right: 8px;
+}
+
+.blog-link {
+    font-size: 14px;
+    font-weight: 400;
 }
 
 .padding-orgnr {
@@ -176,6 +192,54 @@ footer li {
 
 /* Medium (md) tablet */
 @media (min-width: 768px) {
+   .media-size {
+       width: 100%;
+   }
+
+    .nav-menu-mob {
+        display: none;
+    }
+
+    .nav-menu-tab {
+        display: block;
+    }
+
+    .nav-btn {
+        width: 160px;
+        height: 56px;
+        background-color: var(--background);
+        color: var(--primory);
+        border: none;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .nav-tours {
+        width: 160px;
+        height: 40px;
+        background-color: var(--primory);
+        color: var(--background);
+        border: none;
+        font-size: 20px;
+        font-weight: 600;
+        border-radius: 50px;
+        margin-right: 40px;
+    }
+
+    .tb-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 720px;
+        height: 270px;
+        padding: 0;
+        margin-bottom: 24px;
+        background-color: var(--background);
+    }
+
+    #tb-row-two {
+        margin-bottom: 0;
+    }
 }
 
 /* Large (lg) */
@@ -184,6 +248,26 @@ footer li {
 
 /* xLarge (xl) desktop */
 @media (min-width: 1280px) {
+    main {
+        height: 600px;
+    }
+
+    footer {
+        flex-direction: row;
+    }
+
+    .footer-sections {
+        width: 270px;
+    }
+
+    .tb-row {
+        margin: 0;
+        width: 564px;
+    }
+
+    #tb-row-two {
+       margin-left: 24px;
+    }
 }
 
 /* xxLarge (xxl) */

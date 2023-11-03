@@ -308,8 +308,14 @@ footer p {
 }
 
 .footer-orgnr-blog {
+    font-size: 14px;
     font-weight: 600;
     padding-right: 8px;
+}
+
+.blog-link {
+    font-size: 14px;
+    font-weight: 400;
 }
 
 .padding-orgnr {
