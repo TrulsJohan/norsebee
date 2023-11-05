@@ -12,8 +12,7 @@
 }
 
 body {
-    margin: 0 auto;
-    width: 430px;
+    margin: 0
 }
 
 header {
@@ -38,14 +37,21 @@ nav {
     height: 56px;
 }
 
+.nav-menu-tab {
+    display: none;
+}
+
 main {
     background-color: var(--background);
     padding: 0 0 24px 0;
+    width: 430px;
 }
 
 .img-container {
     position: relative;
-    width: 430px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 198px;
 }
 
@@ -59,6 +65,10 @@ main {
     z-index: 10;
     bottom: 0;
     left: 265px;
+}
+
+.mountain-guideline-desktop {
+    display: none;
 }
 
 .guideline-btn {
@@ -303,18 +313,16 @@ footer {
     justify-content: center;
     align-items: center;
     padding: 24px;
+    width: 430px;
 }
 
-footer div {
+.footer-sections {
+    margin-bottom: 24px;
     background-color: var(--info);
     border-radius: 16px;
     width: 350px;
     height: 270px;
     padding: 24px;
-}
-
-.footer-sections {
-    margin-bottom: 24px;
 }
 
 .footer-headers {
@@ -391,6 +399,91 @@ footer li {
 
 /* Medium (md) tablet */
 @media (min-width: 768px) {
+    .media-size {
+        width: 768px;
+    }
+
+    .nav-menu-mob {
+        display: none;
+    }
+
+    .nav-menu-tab {
+        display: block;
+    }
+
+    .nav-btn {
+        width: 140px;
+        height: 56px;
+        background-color: var(--background);
+        color: var(--primory);
+        border: none;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .nav-tours {
+        width: 140px;
+        height: 40px;
+        background-color: var(--primory);
+        color: var(--background);
+        border: none;
+        font-size: 20px;
+        font-weight: 600;
+        border-radius: 50px;
+    }
+
+    .tb-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 720px;
+        height: 270px;
+        padding: 0;
+        margin-bottom: 24px;
+        background-color: var(--background);
+    }
+
+    #tb-row-two {
+        margin-bottom: 0;
+    }
+
+    main {
+        width: 768px;
+        padding-top: 24px;
+    }
+
+    .img-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .mountain-img {
+        width: 720px;
+        border-radius: 1rem;
+    }
+
+    .mountain-guideline {
+        left: 490px;
+    }
+
+    #top-btn {
+        left: 526px;
+    }
+
+    #break-btn {
+        left: 453px;
+    }
+
+    .review-row {
+        display: flex;
+        justify-content: space-between;
+        width: 768px;
+        padding: 0 24px 0 24px;
+    }
+
+    .google-maps-img {
+        width: 720px;
+    }
 }
 
 /* Large (lg) */
@@ -399,6 +492,64 @@ footer li {
 
 /* xLarge (xl) desktop */
 @media (min-width: 1280px) {
+    .media-size {
+        width: 1280px;
+    }
+
+    .img-container {
+        height: 600px;
+    }
+
+    .mountain-img {
+        width: 1200px;
+        height: 600px;
+    }
+
+    .mountain-guideline {
+        display: none;
+    }
+
+    .mountain-guideline-desktop {
+        display: block;
+        position: absolute;
+        z-index: 10;
+        bottom: 0;
+        left: 780px;
+    }
+
+    .guideline-btn {
+        font-size: 1rem;
+        font-weight: 600;
+        width: 146px;
+        height: 32px;
+    }
+
+    #top-btn {
+        top: 198px;
+        left: 888px;
+    }
+
+    #break-btn {
+        top: 441px;
+        left: 638px;
+    }
+
+    footer {
+        flex-direction: row;
+    }
+
+    .footer-sections {
+        width: 270px;
+    }
+
+    .tb-row {
+        margin: 0;
+        width: 564px;
+    }
+
+    #tb-row-two {
+        margin-left: 24px;
+    }
 }
 
 /* xxLarge (xxl) */

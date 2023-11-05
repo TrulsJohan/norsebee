@@ -12,8 +12,7 @@
 }
 
 body {
-    margin: 0 auto;
-    width: 430px;
+    margin: 0;
 }
 
 header {
@@ -38,11 +37,16 @@ nav {
     height: 56px;
 }
 
+.nav-menu-tab {
+    display: none;
+}
+
 main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-color: var(--background);
+    width: 430px;
 }
 
 .about-hero-banner {
@@ -154,18 +158,16 @@ footer {
     justify-content: center;
     align-items: center;
     padding: 24px;
+    width: 430px;
 }
 
-footer div {
+.footer-sections {
+    margin-bottom: 24px;
     background-color: var(--info);
     border-radius: 16px;
     width: 350px;
     height: 270px;
     padding: 24px;
-}
-
-.footer-sections {
-    margin-bottom: 24px;
 }
 
 .footer-headers {
@@ -242,6 +244,58 @@ footer li {
 
 /* Medium (md) tablet */
 @media (min-width: 768px) {
+    .media-size {
+        width: 768px;
+    }
+
+    .nav-menu-mob {
+        display: none;
+    }
+
+    .nav-menu-tab {
+        display: block;
+    }
+
+    .nav-btn {
+        width: 140px;
+        height: 56px;
+        background-color: var(--background);
+        color: var(--primory);
+        border: none;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .nav-tours {
+        width: 140px;
+        height: 40px;
+        background-color: var(--primory);
+        color: var(--background);
+        border: none;
+        font-size: 20px;
+        font-weight: 600;
+        border-radius: 50px;
+    }
+
+    .tb-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 720px;
+        height: 270px;
+        padding: 0;
+        margin-bottom: 24px;
+        background-color: var(--background);
+    }
+
+    #tb-row-two {
+        margin-bottom: 0;
+    }
+
+    .about-hero-banner {
+        width: 768px;
+        height: 350px;
+    }
 }
 
 /* Large (lg) */
@@ -250,6 +304,31 @@ footer li {
 
 /* xLarge (xl) desktop */
 @media (min-width: 1280px) {
+    .media-size{
+        width: 1280px;
+    }
+
+    footer {
+        flex-direction: row;
+    }
+
+    .footer-sections {
+        width: 270px;
+    }
+
+    .tb-row {
+        margin: 0;
+        width: 564px;
+    }
+
+    #tb-row-two {
+        margin-left: 24px;
+    }
+
+    .about-hero-banner {
+        width: 1280px;
+        height: 400px;
+    }
 }
 
 /* xxLarge (xxl) */
