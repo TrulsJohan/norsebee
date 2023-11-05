@@ -15,6 +15,10 @@ body {
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 header {
     display: flex;
     align-items: center;
@@ -22,6 +26,7 @@ header {
     border-bottom: 1px solid rgb(0 0 0 / 30%);
     width: 430px;
     height: 88px;
+    position: relative;
 }
 
 nav {
@@ -39,6 +44,45 @@ nav {
 
 .nav-menu-tab {
     display: none;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+#toggle-menu:checked ~ .dropdown {
+    display: block;
+}
+
+.dropdown {
+    width: 430px;
+    height: 64px;
+    background-color: var(--background);
+    border-bottom: 1px solid rgb(0 0 0 / 30%);
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 40px 1rem 40px;
+    position: absolute;
+    left: 0;
+    top: 88px;
+    display: none;
+}
+
+.dropdown a {
+    width: 100px;
+    height: 2rem;
+    text-decoration: none;
+}
+
+.dropdown-button {
+    width: 100px;
+    height: 2rem;
+    border: none;
+    color: var(--primory);
+    background-color: var(--background);
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 13px 0 0;
 }
 
 main {
