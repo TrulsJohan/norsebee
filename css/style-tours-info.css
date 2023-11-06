@@ -19,12 +19,15 @@ body {
     margin: 0
 }
 
+.media-size {
+    width: 100%;
+}
+
 header {
     display: flex;
     align-items: center;
     background-color: var(--background);
     border-bottom: 1px solid rgb(0 0 0 / 30%);
-    width: 430px;
     height: 88px;
 }
 
@@ -32,7 +35,6 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 430px;
     padding: 16px 40px;
 }
 
@@ -86,28 +88,35 @@ nav {
 
 main {
     background-color: var(--background);
-    padding: 0 0 24px 0;
-    width: 430px;
+    padding: 24px 0 24px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .img-container {
-    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 350px;
     height: 198px;
+    position: relative;
+    background-image: url("assets/images/mountain-one.jpg");
 }
 
 .mountain-img {
-    width: 430px;
+    width: 350px;
     height: 198px;
+    border-radius: 1rem;
+    position: absolute;
 }
 
 .mountain-guideline {
     position: absolute;
     z-index: 10;
     bottom: 0;
-    left: 265px;
+    left: 210px;
 }
 
 .mountain-guideline-desktop {
@@ -129,14 +138,14 @@ main {
     position: absolute;
     z-index: 10;
     top: 61px;
-    left: 301px;
+    left: 250px;
 }
 
 #break-btn {
     position: absolute;
     z-index: 10;
     top: 141px;
-    left: 228px;
+    left: 170px;
 }
 
 .info-container {
@@ -254,6 +263,10 @@ main {
     margin-top: 1rem;
 }
 
+#desktop-review {
+    display: none;
+}
+
 .review-person {
     font-size: 20px;
     font-weight: 600;
@@ -356,7 +369,6 @@ footer {
     justify-content: center;
     align-items: center;
     padding: 24px;
-    width: 430px;
 }
 
 .footer-sections {
@@ -443,7 +455,7 @@ footer li {
 /* Medium (md) tablet */
 @media (min-width: 768px) {
     .media-size {
-        width: 768px;
+        width: 100%;
     }
 
     .nav-menu-mob {
@@ -490,11 +502,6 @@ footer li {
         margin-bottom: 0;
     }
 
-    main {
-        width: 768px;
-        padding-top: 24px;
-    }
-
     .img-container {
         display: flex;
         justify-content: center;
@@ -506,26 +513,34 @@ footer li {
     }
 
     .mountain-guideline {
-        left: 490px;
+        left: 280px;
     }
 
     #top-btn {
-        left: 526px;
+        left: 320px;
     }
 
     #break-btn {
-        left: 453px;
+        left: 240px;
     }
 
     .review-row {
         display: flex;
         justify-content: space-between;
-        width: 768px;
-        padding: 0 24px 0 24px;
+        width: 720px;
+    }
+
+    .review-box {
+        width: 348px;
+    }
+
+    .view-more-btn {
+        margin: 24px 99px 0 99px;
     }
 
     .google-maps-img {
         width: 720px;
+        height: auto;
     }
 }
 
@@ -536,7 +551,7 @@ footer li {
 /* xLarge (xl) desktop */
 @media (min-width: 1280px) {
     .media-size {
-        width: 1280px;
+        width: 100%;
     }
 
     .img-container {
@@ -557,7 +572,7 @@ footer li {
         position: absolute;
         z-index: 10;
         bottom: 0;
-        left: 780px;
+        left: 300px;
     }
 
     .guideline-btn {
@@ -569,12 +584,12 @@ footer li {
 
     #top-btn {
         top: 198px;
-        left: 888px;
+        left: 400px;
     }
 
     #break-btn {
         top: 441px;
-        left: 638px;
+        left: 170px;
     }
 
     footer {
@@ -592,6 +607,31 @@ footer li {
 
     #tb-row-two {
         margin-left: 24px;
+    }
+
+    .google-maps-img {
+        width: 1152px;
+        height: auto;
+    }
+
+    #desktop-review {
+        display: block;
+    }
+
+    .review-row {
+        width: 1152px;
+        height: fit-content;
+        padding: 0;
+    }
+
+    #review-rating-three {
+        padding-top: 0;
+        margin: 0;
+    }
+
+    #review-difficulty-three {
+        padding-top: 0;
+        margin: 0;
     }
 }
 

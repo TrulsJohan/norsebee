@@ -15,6 +15,10 @@ a {
     text-decoration: none;
 }
 
+.media-size {
+    width: 100%;
+}
+
 body {
     margin: 0;
 }
@@ -340,15 +344,20 @@ footer li {
     }
 
     .tour-div {
-        width: 688px;
+        width: 724px;
         height: fit-content;
+        display: flex;
         flex-direction: row;
+        justify-content: space-between;
     }
 
     .tour-img {
         height: 240px;
-        width: 308px;
-        margin-right: 24px;
+        width: 334px;
+    }
+
+    .tour-text-container {
+        width: 334px;
     }
 
     .tb-row {
@@ -375,6 +384,23 @@ footer li {
 @media (min-width: 1280px) {
     main {
         height: fit-content;
+    }
+
+    .tour-div {
+        width: 1152px;
+        height: 400px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .tour-img {
+        height: 368px;
+        width: 548px;
+    }
+
+    .tour-text-container {
+        width: 548px;
     }
 
     footer {

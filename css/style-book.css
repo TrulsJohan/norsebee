@@ -15,6 +15,10 @@ a {
     text-decoration: none;
 }
 
+.media-size {
+    width: 100%;
+}
+
 body {
     margin: 0;
 }
@@ -24,7 +28,6 @@ header {
     align-items: center;
     background-color: var(--background);
     border-bottom: 1px solid rgb(0 0 0 / 30%);
-    width: 430px;
     height: 88px;
 }
 
@@ -32,7 +35,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 430px;
+    width: 100%;
     padding: 16px 40px;
 }
 
@@ -90,11 +93,10 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 430px;
 }
 
 .book-img {
-    width: 430px;
+    width: 100%;
     height: 198px;
 }
 
@@ -103,7 +105,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: relative;
+    width: 100%;
 }
 
 .breadcrumb-container {
@@ -112,6 +114,7 @@ main {
     align-items: center;
     width: 350px;
     height: 40px;
+    position: relative;
 }
 
 .breadcrumb {
@@ -137,7 +140,7 @@ main {
     border: 1px solid rgb(0 0 0 / 30%);
     position: absolute;
     bottom: 20px;
-    left: 190px;
+    left: 150px;
     z-index: 10;
 }
 
@@ -275,7 +278,6 @@ footer {
     justify-content: center;
     align-items: center;
     padding: 24px;
-    width: 430px;
 }
 
 .footer-sections {
@@ -362,7 +364,7 @@ footer li {
 /* Medium (md) tablet */
 @media (min-width: 768px) {
     .media-size {
-        width: 768px;
+        width: 100%;
     }
 
     .nav-menu-mob {
@@ -410,13 +412,8 @@ footer li {
     }
 
     .book-img {
-        width: 768px;
+        width: 100%;
         height: 350px;
-    }
-
-    #payment-btn {
-        bottom: 20px;
-        left: 359px;
     }
 }
 
@@ -427,7 +424,7 @@ footer li {
 /* xLarge (xl) desktop */
 @media (min-width: 1280px) {
     .media-size {
-        width: 1280px;
+        width: 100%;
     }
 
     footer {
@@ -448,13 +445,8 @@ footer li {
     }
 
     .book-img {
-        width: 1280px;
+        width: 100%;
         height: 400px;
-    }
-
-    #payment-btn {
-        bottom: 20px;
-        left: 615px;
     }
 }
 

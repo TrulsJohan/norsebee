@@ -15,6 +15,10 @@ a {
     text-decoration: none;
 }
 
+.media-size {
+    width: 100%;
+}
+
 body {
     margin: 0;
 }
@@ -93,8 +97,8 @@ main {
 }
 
 .about-hero-banner {
-    width: 430px;
-    height: 240px;
+    width: 100%;
+    height: auto;
 }
 
 .company-info {
@@ -189,7 +193,7 @@ main {
 
 .partner-logos {
     width: 204px;
-    height: 80px;
+    height: 70px;
     margin-top: 2rem;
 }
 
@@ -288,7 +292,7 @@ footer li {
 /* Medium (md) tablet */
 @media (min-width: 768px) {
     .media-size {
-        width: 768px;
+        width: 100%;
     }
 
     .nav-menu-mob {
@@ -336,8 +340,8 @@ footer li {
     }
 
     .about-hero-banner {
-        width: 768px;
-        height: 350px;
+        width: 100%;
+        height: 500px;
     }
 }
 
@@ -348,7 +352,7 @@ footer li {
 /* xLarge (xl) desktop */
 @media (min-width: 1280px) {
     .media-size{
-        width: 1280px;
+        width: 100%;
     }
 
     footer {
@@ -369,8 +373,8 @@ footer li {
     }
 
     .about-hero-banner {
-        width: 1280px;
-        height: 400px;
+        width: 100%;
+        height: 600px;
     }
 }
 
