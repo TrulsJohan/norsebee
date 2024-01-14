@@ -61,7 +61,6 @@ nav {
 }
 
 .dropdown {
-    width: 430px;
     height: 64px;
     background-color: var(--background);
     border-bottom: 1px solid rgb(0 0 0 / 30%);
@@ -72,6 +71,11 @@ nav {
     left: 0;
     top: 88px;
     display: none;
+}
+
+.dropdown-container {
+    display: flex;
+    justify-content: space-between;
 }
 
 .dropdown a {
