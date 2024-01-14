@@ -28,7 +28,6 @@ header {
     align-items: center;
     background-color: var(--background);
     border-bottom: 1px solid rgb(0 0 0 / 30%);
-    width: 430px;
     height: 88px;
     position: relative;
 }
@@ -37,8 +36,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 430px;
-    padding: 16px 40px;
+    padding: 1rem 40px;
 }
 
 .logo {
@@ -46,11 +44,15 @@ nav {
     height: 56px;
 }
 
-.nav-menu-tab {
+#toggle-menu {
     display: none;
 }
 
-.menu-toggle {
+.menu-input {
+    display: none;
+}
+
+.nav-menu-tab {
     display: none;
 }
 
@@ -59,7 +61,6 @@ nav {
 }
 
 .dropdown {
-    width: 430px;
     height: 64px;
     background-color: var(--background);
     border-bottom: 1px solid rgb(0 0 0 / 30%);
@@ -70,6 +71,11 @@ nav {
     left: 0;
     top: 88px;
     display: none;
+}
+
+.dropdown-container {
+    display: flex;
+    justify-content: space-between;
 }
 
 .dropdown a {
@@ -87,10 +93,6 @@ nav {
     font-size: 20px;
     font-weight: 600;
     margin: 0 13px 0 0;
-}
-
-#toggle-menu {
-    display: none;
 }
 
 footer {
