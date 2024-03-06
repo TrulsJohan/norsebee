@@ -1,8 +1,8 @@
 const bookingContainer = document.getElementById("bookingContainer");
 const checkoutBtn = document.getElementById("checkoutBtn");
 const calendar = document.querySelector(`.calendar`);
+
 let moviesDeserialized = JSON.parse(localStorage.getItem("data"));
-console.log(moviesDeserialized);
 
 checkoutBtn.style.display = `none`;
 calendar.style.display = `none`;
